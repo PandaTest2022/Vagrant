@@ -1,7 +1,11 @@
----
-- name: Test
+  ---
+- name: 
   hosts: all
   become: true
   roles:
-  - packages
-  - user
+    - user
+    - packages
+    - geerlingguy.docker
+    - christiangda.awscli
+    - christiangda.awscli_configure
+    - diodonfrost.terraform
