@@ -1,4 +1,4 @@
-  ---
+---
 - name: 
   hosts: all
   become: true
@@ -9,3 +9,7 @@
     - christiangda.awscli
     - christiangda.awscli_configure
     - diodonfrost.terraform
+- vars:
+    docker_users:
+      - panda
+      - vagrant
