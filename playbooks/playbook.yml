@@ -1,15 +1,15 @@
 ---
-- name: 
-  hosts: all
-  become: true
-  roles:
-    - user
-    - packages
-    - geerlingguy.docker
-    - christiangda.awscli
-    - christiangda.awscli_configure
-    - diodonfrost.terraform
-- vars:
-    docker_users:
-      - panda
-      - vagrant
+ name: 
+ hosts: all
+ become: true
+ roles:
+   - user
+   - packages
+   - geerlingguy.docker
+   - christiangda.awscli
+   - christiangda.awscli_configure
+   - diodonfrost.terraform
+ vars:
+   docker_users:
+     - panda
+     - vagrant
